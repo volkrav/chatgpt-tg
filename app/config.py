@@ -1,11 +1,13 @@
-from os import environ
+from os import environ, getenv
 
 from dotenv import find_dotenv, load_dotenv
-
-from app.misc.utils import get_base_directory
 
 load_dotenv(find_dotenv())
 
 BOT_TOKEN = environ.get('BOT_TOKEN', 'define bot token!')
 
-BASE_DIR = get_base_directory()
+VOICE_RELATIVE_DIR = 'data/files/voices'
+
+OPENAI_API_KEY = getenv('OPENAI_API_KEY')
+
+BUTTON_NEW_TEXT = 'Почати нову розмову'

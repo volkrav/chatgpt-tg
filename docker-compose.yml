@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  chatgpt-tg:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: "chatgpt-tg"
+    #restart: always
+    volumes:
+      - .:/app
+    env_file:
+      - .env

@@ -3,7 +3,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# my
 test.py
+*.ogg
+*.mp3
 
 # C extensions
 *.so
@@ -141,3 +145,4 @@ cython_debug/
 
 .idea
 .vscode
+.DS_Store
